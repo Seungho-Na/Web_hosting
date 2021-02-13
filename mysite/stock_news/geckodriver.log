@@ -1,0 +1,20 @@
+1613035264759	geckodriver	INFO	Listening on 127.0.0.1:35729
+1613035268937	geckodriver::marionette	INFO	Starting browser /usr/local/bin/firefox with args ["-marionette"]
+
+(process:239739): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: no display specified
+1613035523019	geckodriver	INFO	Listening on 127.0.0.1:33235
+1613035526053	geckodriver::marionette	INFO	Starting browser /usr/local/bin/firefox with args ["-marionette"]
+
+(process:240758): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: no display specified
+1613035843561	geckodriver	INFO	Listening on 127.0.0.1:39165
+1613036502647	geckodriver	INFO	Listening on 127.0.0.1:44031
+
+(process:245690): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+1613036683908	geckodriver	INFO	Listening on 127.0.0.1:54289
+
+(process:246885): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+1613038559159	geckodriver	INFO	Listening on 127.0.0.1:59795
+
+(process:259625): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
