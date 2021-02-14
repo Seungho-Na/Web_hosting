@@ -7,15 +7,13 @@ from .news_crawler import CrawlObj
 #from django.shortcuts import render
 
 def index(request):
-    urls = CrawlObj().crawl_news_url()
-    for url in urls:
-        n = News(url_text=url, pub_date=timezone.now())
-        n.url_text = url
+    urlsAndtext = CrawlObj().crawl_news()
+    for uAt in urlsAndtext:
+        n = News(url_text=uAt[0], news_text=uAt[1], pub_date=timezone.now())
         n.save()
 
-    news_list = News.objects.order_by('id')
-    length = len(news_list)
-    latest_news_list = news_list[length-10:]
+    db_news_list = News.objects.order_by('id')
+    latest_news_list = db_news_list[len(db_news_list)-len(urlsAndtext):]
 
     template = loader.get_template('stock_news/index.html')
     context = {
